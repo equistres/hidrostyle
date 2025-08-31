@@ -55,3 +55,13 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 });
+
+  const version = '1.0.4'; // podés cambiarlo a mano en cada release
+
+  document.querySelectorAll('script[src], link[rel="stylesheet"]').forEach(el => {
+    if (el.tagName === 'SCRIPT') {
+      el.src = el.src + '?v=' + version;
+    } else if (el.tagName === 'LINK') {
+      el.href = el.href + '?v=' + version;
+    }
+  });
