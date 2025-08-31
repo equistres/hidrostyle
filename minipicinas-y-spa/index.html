@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hidrostyle - Catálogo de Minipiscinas & Spa</title>
+  <meta name="description" content="Descubre nuestra colección de minipiscinas y spa premium. Diseños compactos y de lujo para terrazas y hogares.">
+  
+  <!-- CSS global y de catálogo -->
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/catalogo.css">
+  <script src="../js/menu.js"></script>
+</head>
+<body>
+
+<!-- Header (igual al de la home) -->
+  <header>
+    <nav>
+      <a href="../index.html" class="logo">HIDROSTYLE</a>
+      <ul class="nav-menu">
+        <li><a href="../index.html#inicio">Inicio</a></li>
+        <li><a href="../index.html#productos">Productos</a></li>
+        <li><a href="../index.html#nosotros">Nosotros</a></li>
+        <li><a href="../index.html#contacto">Contacto</a></li>
+        <li><a href="http://listado.mercadolibre.com.ar/_CustId_85334376" target="_blank" rel="noopener">MercadoLibre</a></li>
+      </ul>
+      <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Menu">
+        <span>☰</span>
+      </button>
+    </nav>
+
+    <!-- Menú Mobile -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="../index.html#inicio">Inicio</a>
+      <a href="../index.html#productos">Productos</a>
+      <a href="../index.html#nosotros">Nosotros</a>
+      <a href="../index.html#contacto">Contacto</a>
+      <a href="http://listado.mercadolibre.com.ar/_CustId_85334376" target="_blank" rel="noopener">MercadoLibre</a>
+    </div>
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+  </header>
+
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Minipiscinas & <span style="color: #00d4ff;">Spa</span></h1>
+      <p class="subtitle">La colección exclusiva de relax compacto con tecnología premium</p>
+    </div>
+  </section>
+
+  <!-- Filters Section -->
+  <div class="container">
+    <section class="filters-section">
+      <div class="filters">
+        <div class="filter-group">
+          <label>Buscar</label>
+          <input type="text" class="search-box" id="searchBox" placeholder="Buscar por nombre o modelo...">
+        </div>
+        
+        <div class="filter-group">
+          <label>Categoría</label>
+          <select class="filter-select" id="categoryFilter">
+            <option value="">Todas las categorías</option>
+          </select>
+        </div>
+        
+        <div class="filter-group">
+          <label>Tamaño</label>
+          <select class="filter-select" id="sizeFilter">
+            <option value="">Todos los tamaños</option>
+          </select>
+        </div>
+        
+        <div class="filter-group">
+          <label>Motor</label>
+          <select class="filter-select" id="motorFilter">
+            <option value="">Todos los motores</option>
+          </select>
+        </div>
+        
+        <div class="filter-group">
+          <label>Jets</label>
+          <select class="filter-select" id="jetsFilter">
+            <option value="">Todos los jets</option>
+          </select>
+        </div>
+        
+        <button class="clear-filters" id="clearFilters">Limpiar Filtros</button>
+      </div>
+    </section>
+  </div>
+
+  <!-- Results Info -->
+  <div class="container">
+    <div class="results-info" id="resultsInfo">
+      Cargando productos...
+    </div>
+  </div>
+
+  <!-- Products Section -->
+  <div class="container">
+    <section class="products-section">
+      <div class="loading" id="loading">
+        <div class="spinner"></div>
+        <p>Cargando productos...</p>
+      </div>
+      
+      <div class="products-grid" id="productsGrid">
+        <!-- Products will be generated here -->
+      </div>
+      
+      <div class="no-results" id="noResults" style="display: none;">
+        <h3>No se encontraron productos</h3>
+        <p>Prueba ajustando los filtros para encontrar lo que buscas</p>
+      </div>
+    </section>
+  </div>
+
+  <!-- External JS Files -->
+  <script src="./js/minipiscinas-data.js"></script>
+  <script src="../hidromasajes/js/catalogo.js"></script>
+</body>
+</html>
