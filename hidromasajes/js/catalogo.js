@@ -230,7 +230,7 @@
         // Contact product function
         function contactProduct(productName) {
             const message = `Hola! Me interesa el hidromasaje ${productName}. ¿Podrían proporcionarme más información y precio?`;
-            const whatsappUrl = `https://wa.me/5491156610832?text=${encodeURIComponent(message)}`;
+            const whatsappUrl = `https://wa.me/5491166610832?text=${encodeURIComponent(message)}`;
             window.open(whatsappUrl, '_blank');
         }
 
